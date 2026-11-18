@@ -1,0 +1,4 @@
+id,name,email,phone,date,status,company
+1,Ada,ada@example.com,+14155550101,2024-03-02,active,ABC Private Limited
+2,Ben,ben@example.com,+14155550102,2024-05-21,inactive,Orbit
+3,Cara,cara@example.com,+14155550103,2024-07-11,active,Delta

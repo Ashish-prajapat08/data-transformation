@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: data-migration-agent
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PLANNER_MODE
+        value: llm
+      - key: LLM_PROVIDER
+        value: nvidia
+      - key: NVIDIA_MODEL
+        value: nvidia/nemotron-3.5-lightning-30b-a3b
+      - key: NVIDIA_API_KEY
+        sync: false
+      - key: APP_PASSWORD
+        sync: false
+      - key: DATABASE_URL
+        value: sqlite:///.runtime/migrations.db
+      - key: FASTAPI_URL
+        value: http://127.0.0.1:8000
+      - key: MAX_UPLOAD_BYTES
+        value: "2097152"

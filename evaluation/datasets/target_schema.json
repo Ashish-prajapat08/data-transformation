@@ -1,0 +1,98 @@
+{
+  "name": "Evaluation contacts",
+  "fields": [
+    {
+      "name": "id",
+      "kind": "integer",
+      "required": true,
+      "unique": true,
+      "aliases": [
+        "customer_id"
+      ],
+      "allowed": [],
+      "default": null,
+      "category_map": {},
+      "date_order": null
+    },
+    {
+      "name": "name",
+      "kind": "text",
+      "required": true,
+      "unique": false,
+      "aliases": [
+        "customer_name"
+      ],
+      "allowed": [],
+      "default": null,
+      "category_map": {},
+      "date_order": null
+    },
+    {
+      "name": "email",
+      "kind": "email",
+      "required": true,
+      "unique": false,
+      "aliases": [
+        "email_address"
+      ],
+      "allowed": [],
+      "default": null,
+      "category_map": {},
+      "date_order": null
+    },
+    {
+      "name": "phone",
+      "kind": "phone",
+      "required": false,
+      "unique": false,
+      "aliases": [
+        "mobile"
+      ],
+      "allowed": [],
+      "default": null,
+      "category_map": {},
+      "date_order": null
+    },
+    {
+      "name": "date",
+      "kind": "date",
+      "required": false,
+      "unique": false,
+      "aliases": [
+        "joined"
+      ],
+      "allowed": [],
+      "default": null,
+      "category_map": {},
+      "date_order": "dayfirst"
+    },
+    {
+      "name": "status",
+      "kind": "category",
+      "required": false,
+      "unique": false,
+      "aliases": [],
+      "allowed": [
+        "active",
+        "inactive"
+      ],
+      "default": null,
+      "category_map": {
+        "enabled": "active"
+      },
+      "date_order": null
+    },
+    {
+      "name": "company",
+      "kind": "text",
+      "required": false,
+      "unique": false,
+      "aliases": [],
+      "allowed": [],
+      "default": null,
+      "category_map": {},
+      "date_order": null
+    }
+  ],
+  "entity_field": "company"
+}
