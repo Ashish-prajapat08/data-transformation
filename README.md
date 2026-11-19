@@ -1,5 +1,9 @@
 # Agentic AI Data Migration & Transformation Platform
 
+**[Open the live app](https://data-migration-agent.onrender.com)**
+
+The hosted demo requires the demo password configured by the owner.
+
 This project evolves the original Pandas/FastAPI/Streamlit cleaning app into a single LangGraph migration orchestrator. The canonical specification is [AI_DATA_MIGRATION_AGENT_SOURCE_OF_TRUTH.md](AI_DATA_MIGRATION_AGENT_SOURCE_OF_TRUTH.md).
 
 Upload CSV/XLSX → profile → review mappings and migration plan → approve tools → transform → validate → bounded corrective replanning → human review → target-ready CSV.
